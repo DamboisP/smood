@@ -133,4 +133,12 @@
       <Name>Smood</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logo.png" />
+    <BundleResource Include="Resources\neutral.png" />
+    <BundleResource Include="Resources\nok.png" />
+    <BundleResource Include="Resources\ok.png" />
+    <BundleResource Include="Resources\very_nok.png" />
+    <BundleResource Include="Resources\very_ok.png" />
+  </ItemGroup>
 </Project>

@@ -4,21 +4,20 @@
              x:Class="Smood.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        <Frame BackgroundColor="{StaticResource PastelBlue}" Padding="80, 40, 80, 20" CornerRadius="0">
+            <Image Source="logo.png" WidthRequest="150"></Image>
         </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+
+        <StackLayout BackgroundColor="{StaticResource LightGrey}" Margin="20" Padding="20">
+            <Label HorizontalTextAlignment="Center">How are you feeling today ?</Label>
+            <FlexLayout Direction="Row" AlignContent="Center" JustifyContent="Center">
+                <ImageButton x:Name="btn_very_nok" Source="very_nok.png" Clicked="HandleClick" Margin="5" CornerRadius="25" HeightRequest="50" WidthRequest="50"></ImageButton>
+                <ImageButton x:Name="btn_nok" Source="nok.png" Clicked="HandleClick" Margin="5" CornerRadius="25" HeightRequest="50" WidthRequest="50"></ImageButton>
+                <ImageButton x:Name="btn_neutral" Source="neutral.png" Clicked="HandleClick" Margin="5" CornerRadius="25" HeightRequest="50" WidthRequest="50"></ImageButton>
+                <ImageButton x:Name="btn_ok" Source="ok.png" Clicked="HandleClick" Margin="5" CornerRadius="25" HeightRequest="50" WidthRequest="50"></ImageButton>
+                <ImageButton x:Name="btn_very_ok" Source="very_ok.png" Clicked="HandleClick" Margin="5" CornerRadius="25" HeightRequest="50" WidthRequest="50"></ImageButton>
+            </FlexLayout>
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>
